@@ -1,12 +1,12 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: Ritu_app
+  name: ritu_app
   namespace: default
 spec:
-  interval: 1m
+  interval: 15m
   path: "./fluxcd/repositories/Ritu_app/deploy"
   prune: true
   sourceRef:
     kind: GitRepository
-    name: Ritu_app
+    name: ritu_app
